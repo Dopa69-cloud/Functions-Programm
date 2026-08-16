@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class fun5
+{
+    static int palindrome(int n)
+    {
+        int s = 0;
+
+        while(n > 0)
+        {
+            int r = n % 10;
+            s = s * 10 + r;
+            n = n / 10;
+        }
+
+        return s;
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first number:");
+        int a = sc.nextInt();
+
+        System.out.println("Enter second number:");
+        int b = sc.nextInt();
+
+        int x = palindrome(a);
+        int y = palindrome(b);
+
+        if(x == a && y == b)
+            System.out.println("Super palindrome");
+        else
+            System.out.println("Not");
+    }
+}
