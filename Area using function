@@ -1,0 +1,22 @@
+class fun5
+{
+    void square(int s)
+    {
+        int ar = s * s;
+        System.out.println("Area of square = " + ar);
+    }
+
+    void rectangle(int l, int b)
+    {
+        int ar = l * b;
+        System.out.println("Area of rectangle = " + ar);
+    }
+
+    public static void main(String[] args)
+    {
+        fun5 obj = new fun5();
+
+        obj.square(5);
+        obj.rectangle(2, 6);
+    }
+}
