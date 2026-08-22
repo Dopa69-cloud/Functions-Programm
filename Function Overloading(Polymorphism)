@@ -1,0 +1,25 @@
+class shapes
+{
+     static void area(int s)
+    {
+        int ar=s*s;
+        System.out.println("Area of square ="+ar);
+    }
+     static void area(int l,int b)
+    {
+        int ar=l*b;
+        System.out.println("Area of Rectangle="+ar);
+    }
+     static void area(double r)
+    {
+         double ar=3.14*r*r;
+        System.out.println("Area of Circle="+ar);
+
+    }
+    public static void main(String[] args)
+    {
+        area(5);
+        area(6,4);
+        area(7);
+    }
+}
