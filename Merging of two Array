@@ -1,0 +1,54 @@
+import java.util.*;
+
+class Merge
+{
+    public static void main(String[] args)
+    {
+        int p = 0;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the length of array:");
+        int n = sc.nextInt();
+
+        int ar[] = new int[n];
+
+        System.out.println("Enter the length of second array:");
+        int q = sc.nextInt();
+
+        int br[] = new int[q];
+
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++)
+        {
+            ar[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter " + q + " elements:");
+        for (int i = 0; i < q; i++)
+        {
+            br[i] = sc.nextInt();
+        }
+
+        int cr[] = new int[n + q];
+
+        // Copy first array
+        for (int i = 0; i < n; i++)
+        {
+            cr[p++] = ar[i];
+        }
+
+        // Copy second array
+        for (int i = 0; i < q; i++)
+        {
+            cr[p++] = br[i];
+        }
+
+        System.out.println("The merged array is:");
+
+        for (int i = 0; i < p; i++)
+        {
+            System.out.println(cr[i]);
+        }
+    }
+}
